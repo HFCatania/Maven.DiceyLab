@@ -4,16 +4,16 @@ public class Bins {
 
     public Bins(int numDice, int maxBins){
         this.bins = new int[maxBins + 1];
-        for(int i = numDice; i <= maxBins; i++){
-            bins[1] = 0;
+        for(int i = 0; i < maxBins; i++){
+            bins[i] = 0;
         }
     }
 
-    public Integer getBins(Integer bin) {
+    public int getBins(int bin) {
         return this.bins[bin];
     }
 
-    public void incrementBins(Integer bin){
+    public void incrementBins(int bin){
         this.bins[bin]++;
     }
 }
